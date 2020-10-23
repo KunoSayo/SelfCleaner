@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             long bytes = 0;
             try {
-                bytes = Files.getFileStore(path).getTotalSpace();
+                bytes = Files.size(path);
             } catch (Throwable e) {
                 e.printStackTrace();
             }
